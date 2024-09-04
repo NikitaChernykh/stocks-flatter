@@ -6,6 +6,8 @@ import 'package:namer_app/features/symbols/data/models/symbol_model.dart';
 class HomeController {
   final WebSocketService _webSocketService;
   final StockQuoteService _stockQuoteService;
+  final List<String> stockSymbols = [AAPL, NVDA, MSFT, INTC, TSLA];
+  final List<String> cryptoSymbols = [BTCUSDT, ETHBTC, BNBBTC, LTCBTC];
 
   List<SymbolModel> allSymbols = [];
   bool _isWebSocketConnected = false;
@@ -14,9 +16,9 @@ class HomeController {
 
   Future<void> fetchInitialQuotes(Function(List<SymbolModel>) onSuccess, Function(dynamic) onError) async {
     try {
-      final stockSymbols = await _stockQuoteService.fetchQuotes([AAPL, NVDA, MSFT]);
-      allSymbols = stockSymbols;
-      onSuccess(stockSymbols);
+      final fetchedSymbols = await _stockQuoteService.fetchQuotes(stockSymbols);
+      allSymbols = fetchedSymbols;
+      onSuccess(fetchedSymbols);
       connectWebSocket(onSuccess);
     } catch (e) {
       onError(e);
@@ -54,15 +56,15 @@ class HomeController {
   }
 
   void subscribeToStocks() {
-    _webSocketService.subscribe(AAPL);
-    _webSocketService.subscribe(NVDA);
-    _webSocketService.subscribe(MSFT);
+    for (var symbol in stockSymbols) {
+      _webSocketService.subscribe(symbol);
+    }
   }
 
   void subscribeToCrypto(Function(List<SymbolModel>) onSymbolsUpdated) {
-    _webSocketService.subscribe(BTCUSDT);
-    _webSocketService.subscribe(ETHBTC);
-    _webSocketService.subscribe(BNBBTC);
+    for (var symbol in cryptoSymbols) {
+      _webSocketService.subscribe(symbol);
+    }
 
     _webSocketService.symbolsStream.listen((newSymbols) {
       updateSymbols(newSymbols);
@@ -75,7 +77,7 @@ class HomeController {
   }
 
   bool isStockSymbol(String symbol) {
-    return symbol == AAPL || symbol == NVDA || symbol == MSFT;
+    return stockSymbols.contains(symbol);
   }
 
   List<SymbolModel> filterSymbolsByType(List<SymbolModel> allSymbols, bool isStock) {

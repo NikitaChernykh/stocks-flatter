@@ -2,13 +2,54 @@
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Follow the steps below to run the project:
 
-A few resources to get you started if this is your first Flutter project:
+#### 1. Clone the Repository
+In the terminal of vscode run this command
+```bash
+git clone https://github.com/your-repo/namer_app.git
+cd stocks-flatter-main
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+After navigating to the project directory install the required packages.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In the terminal of vscode run this command
+```bash
+flutter pub get
+```
+
+#### 2. Environment Variables Setup
+
+This project uses flutter_dotenv to load environment variables from an .env file. You will need to create an .env file in the root of the project and add your API key to succesfully fetch stocks in the app.
+
+Key can be abtained here for free: https://finnhub.io/
+
+Example of .env file
+```bash
+# .env
+API_KEY=paste_your_api_key_here
+```
+
+#### 4. Running the Project
+
+In the terminal of vscode run this command
+```bash
+flutter run
+```
+
+#### 5. Project Structure
+The project structure follows a simple layout with the following main folders:
+
+* lib/: Contains all Dart code and application logic.
+* test/: Contains unit tests for the project.
+
+
+#### 6. Architecture Design Document
+
+In the project directory PDF is uploaded named "Project Overview" for more details on desing decisions.
+
+
+#### 7. Project Images
+
+![Alt text](https://i.imgur.com/cLD1Z13.jpeg "stock screen")
+![Alt text](https://i.imgur.com/vBN01nj.jpeg "crypto screen")

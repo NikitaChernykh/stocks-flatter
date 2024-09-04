@@ -10,8 +10,11 @@ String apiKey = dotenv.env['API_KEY'] ?? '';
 const String AAPL = 'AAPL';
 const String NVDA = 'NVDA';
 const String MSFT = 'MSFT';
+const String INTC = 'INTC';
+const String TSLA = 'TSLA';
 
 // Crypto Symbols
 const String BTCUSDT = 'BINANCE:BTCUSDT';
 const String ETHBTC = 'BINANCE:ETHBTC';
 const String BNBBTC = 'BINANCE:BNBBTC';
+const String LTCBTC = 'BINANCE:LTCBTC';
