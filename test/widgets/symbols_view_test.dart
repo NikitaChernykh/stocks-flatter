@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:namer_app/features/symbols/data/models/symbol_model.dart';
-import 'package:namer_app/features/symbols/presentation/widgets/circleAvatarWidget.dart';
-import 'package:namer_app/features/symbols/presentation/widgets/symbolsViewWidget.dart';
+import 'package:stocks/features/symbols/data/models/symbol_model.dart';
+import 'package:stocks/features/symbols/presentation/widgets/circleAvatarWidget.dart';
+import 'package:stocks/features/symbols/presentation/widgets/symbolsViewWidget.dart';
 
 void main() {
   group('SymbolsView Widget Tests', () {

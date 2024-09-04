@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:namer_app/features/symbols/data/models/symbol_model.dart';
-import 'package:namer_app/features/symbols/presentation/widgets/circleAvatarWidget.dart';
-import 'package:namer_app/features/symbols/presentation/widgets/errorViewWidget.dart';
+import 'package:stocks/features/symbols/data/models/symbol_model.dart';
+import 'package:stocks/features/symbols/presentation/widgets/circleAvatarWidget.dart';
+import 'package:stocks/features/symbols/presentation/widgets/errorViewWidget.dart';
 
 class SymbolsView extends StatelessWidget {
   final List<SymbolModel> symbols;

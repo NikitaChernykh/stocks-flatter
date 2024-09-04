@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:namer_app/core/constants/constants.dart';
-import 'package:namer_app/features/symbols/data/models/symbol_model.dart';
+import 'package:stocks/core/constants/constants.dart';
+import 'package:stocks/features/symbols/data/models/symbol_model.dart';
 
 class StockQuoteService {
   final String _baseUrl = '$symbolsApiBaseUrl/v1/quote?token=$apiKey';

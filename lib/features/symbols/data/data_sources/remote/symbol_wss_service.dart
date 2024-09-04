@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:namer_app/core/constants/constants.dart';
-import 'package:namer_app/features/symbols/data/models/symbol_model.dart';
+import 'package:stocks/core/constants/constants.dart';
+import 'package:stocks/features/symbols/data/models/symbol_model.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 import 'package:web_socket_channel/status.dart' as status;
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:namer_app/features/symbols/presentation/pages/home.dart';
+import 'package:stocks/features/symbols/presentation/pages/home.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {

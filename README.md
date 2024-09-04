@@ -7,8 +7,8 @@ Follow the steps below to run the project:
 #### 1. Clone the Repository
 In the terminal of vscode run this command
 ```bash
-git clone https://github.com/your-repo/namer_app.git
-cd stocks-flatter-main
+git clone https://github.com/NikitaChernykh/stocks-flatter.git
+cd stocks-flatter
 ```
 
 After navigating to the project directory install the required packages.
@@ -48,8 +48,14 @@ The project structure follows a simple layout with the following main folders:
 
 In the project directory PDF is uploaded named "Project Overview" for more details on desing decisions.
 
+#### 7. Run Tests
 
-#### 7. Project Images
+In the terminal of vscode run this command
+```bash
+flutter test
+```
+
+#### 8. Project Images
 
 ![Alt text](https://i.imgur.com/cLD1Z13.jpeg "stock screen")
 ![Alt text](https://i.imgur.com/vBN01nj.jpeg "crypto screen")

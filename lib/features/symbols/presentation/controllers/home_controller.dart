@@ -1,7 +1,7 @@
-import 'package:namer_app/core/constants/constants.dart';
-import 'package:namer_app/features/symbols/data/data_sources/remote/stock_quote_service.dart';
-import 'package:namer_app/features/symbols/data/data_sources/remote/symbol_wss_service.dart';
-import 'package:namer_app/features/symbols/data/models/symbol_model.dart';
+import 'package:stocks/core/constants/constants.dart';
+import 'package:stocks/features/symbols/data/data_sources/remote/stock_quote_service.dart';
+import 'package:stocks/features/symbols/data/data_sources/remote/symbol_wss_service.dart';
+import 'package:stocks/features/symbols/data/models/symbol_model.dart';
 
 class HomeController {
   final WebSocketService _webSocketService;

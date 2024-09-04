@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:namer_app/core/constants/constants.dart';
-import 'package:namer_app/features/symbols/data/data_sources/remote/stock_quote_service.dart';
-import 'package:namer_app/features/symbols/data/data_sources/remote/symbol_wss_service.dart';
-import 'package:namer_app/features/symbols/data/models/symbol_model.dart';
-import 'package:namer_app/features/symbols/presentation/controllers/home_controller.dart';
-import 'package:namer_app/features/symbols/presentation/widgets/symbolsViewWidget.dart';
-import 'package:namer_app/features/symbols/presentation/widgets/pillsViewWidget.dart';
+import 'package:stocks/core/constants/constants.dart';
+import 'package:stocks/features/symbols/data/data_sources/remote/stock_quote_service.dart';
+import 'package:stocks/features/symbols/data/data_sources/remote/symbol_wss_service.dart';
+import 'package:stocks/features/symbols/data/models/symbol_model.dart';
+import 'package:stocks/features/symbols/presentation/controllers/home_controller.dart';
+import 'package:stocks/features/symbols/presentation/widgets/symbolsViewWidget.dart';
+import 'package:stocks/features/symbols/presentation/widgets/pillsViewWidget.dart';
 
 class HomePage extends StatefulWidget {
   @override
